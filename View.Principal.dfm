@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -82,6 +83,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Cadastrar'
     TabOrder = 4
+    OnClick = btnCadastrarClick
   end
   object Button1: TButton
     Left = 331
@@ -90,6 +92,7 @@ object Form1: TForm1
     Height = 25
     Caption = '<<'
     TabOrder = 5
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 369
@@ -98,6 +101,7 @@ object Form1: TForm1
     Height = 25
     Caption = '>>'
     TabOrder = 6
+    OnClick = Button2Click
   end
   object Memo1: TMemo
     Left = 24
@@ -111,7 +115,8 @@ object Form1: TForm1
     Top = 152
     Width = 96
     Height = 25
-    Caption = 'Calcular Sal'#225'rio'
+    Caption = 'Calcular Sal'#225'rios'
     TabOrder = 8
+    OnClick = btnCalcularClick
   end
 end
